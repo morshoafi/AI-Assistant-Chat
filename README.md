@@ -3,7 +3,7 @@
 A professional AI-powered chat platform that provides a seamless, context-aware conversational experience. It bridges a modern React frontend with a robust Python backend to deliver intelligent responses.
 
 ## 🔗 Repository
-You can find the source code for this project here: [הכניסי כאן את הקישור ל-GitHub שלך]
+You can find the source code for this project here: https://github.com/morshoafi/AI-Assistant-Chat
 
 ## 🚀 Features
 - **Intelligent Conversations:** Powered by OpenAI GPT-4o API for high-quality, human-like responses.

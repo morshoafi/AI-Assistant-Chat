@@ -68,7 +68,7 @@ export function About() {
             <footer className="about-footer">
                 <div className="author-info">
                     <p>All code is managed with <strong>Git</strong> and hosted on <strong>GitHub</strong>.</p>
-                    <a href="URL_TO_YOUR_GITHUB_PROFILE" target="_blank" className="github-link">
+                    <a href="https://github.com/morshoafi/AI-Assistant-Chat" target="_blank" className="github-link">
                         View My Work on GitHub ➔
                     </a>
                 </div>
