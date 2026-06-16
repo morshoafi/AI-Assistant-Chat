@@ -1,0 +1,42 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #fefefe 0%, #f7f9fc 100%);
+    --primary-gradient: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    overflow: hidden; 
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+/* The Layout structure */
+.Layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden; 
+}
+
+header, nav {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
