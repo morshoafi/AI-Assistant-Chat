@@ -34,7 +34,15 @@ You can find the source code for this project here: https://github.com/morshoafi
 ### Frontend Setup
 1. Navigate to the `Frontend` folder.
 2. Install dependencies: `npm install`.
-3. Start the development server: `npm run dev`.
+3. Start the development server: `npm start`.
+
+### Database Setup
+1. Open **MySQL Workbench**.
+2. Click on the **Server** menu at the top and select **Data Import**.
+3. In the **Data Import** tab, select **Import from Self-Contained File**.
+4. Click the `...` button to select the `chatgpt.sql` file located in your project's `Database` folder.
+5. Ensure the **Default Target Schema** is set correctly (or click **New** to create your database schema).
+6. Click the **Start Import** button at the bottom right to complete the process.
 
 ---
 *Created by Mor Shoafi*

@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Annotated
+from typing import Annotated, Optional
 from sqlalchemy import Column, Integer, String, DateTime, Text, ForeignKey, func
 from utils.dal import BaseModel  
 from pydantic import BaseModel as BaseSchema, Field
@@ -23,7 +23,7 @@ class MessageModel(BaseModel):
 
 class ChatRequestSchema(BaseSchema):
     # required data from React to process a chat message
-    session_id: str = Field(..., min_length=36, max_length=36)
+    session_id: Optional[str] = "new"
     message: Annotated[str, Field(min_length=1, max_length=2000)]
 
 

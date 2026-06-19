@@ -1,3 +1,4 @@
+import uuid
 from openai import OpenAI
 from utils.app_config import AppConfig
 from utils.dal import dal
@@ -27,6 +28,10 @@ class ChatService:
 
     def handle_chat_message(self, request: ChatRequestSchema):
         try:
+            # generate new session ID if missing or new
+            if not request.session_id or request.session_id == "new":
+                request.session_id = str(uuid.uuid4())
+
             # get or create the conversation object
             conversation = self.get_or_create_conversation(request.session_id)
             conv_id = conversation.id
@@ -45,8 +50,19 @@ class ChatService:
                 MessageModel.conversation_id == conv_id
             ).order_by(MessageModel.created_at.asc()).all()
 
-            # format history into OpenAI format
-            openai_messages = [
+            # define AI persona
+            system_prompt = {
+                "role": "system", 
+                "content": (
+                    "You are a creative, helpful, and friendly AI assistant. "
+                    "Always use emojis to make the conversation engaging. "
+                    "Strictly use clean Markdown: use bold for emphasis, bullet points for lists, "
+                    "and clear headers for structured info. Keep the tone professional but inviting."
+                )
+            }
+
+            # inject system prompt at start of message list
+            openai_messages = [system_prompt] + [
                 {"role": "user" if getattr(m, "sender", "user") == "user" else "assistant", "content": str(getattr(m, "content", ""))}
                 for m in history
             ]
