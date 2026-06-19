@@ -26,10 +26,11 @@ You can find the source code for this project here: https://github.com/morshoafi
 
 ### Backend Setup
 1. Navigate to the `Backend` folder.
-2. Activate your virtual environment (e.g., `env\Scripts\activate`).
-3. Install dependencies: `pip install -r requirements.txt`.
-4. Create a `.env` file and add your `OPENAI_API_KEY` and database credentials.
-5. Run the server: `py src/app.py`.
+2. Create your virtual environment: `py -m venv env`.
+3. Activate your virtual environment: `env\Scripts\activate`.
+4. Install dependencies: `pip install -r requirements.txt`.
+5. Create or update your `.env` file with your `OPENAI_API_KEY` and database credentials.
+6. Run the server: `py src/app.py`.
 
 ### Frontend Setup
 1. Navigate to the `Frontend` folder.
