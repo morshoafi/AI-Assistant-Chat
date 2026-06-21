@@ -9,7 +9,7 @@ export function About() {
             <header className="about-header">
                 <span className="badge">Next-Gen AI</span>
                 <h2>Welcome to AI Assistant</h2>
-                <p>Hi, I'm Mor Shoafi. This project represents my journey in building seamless, high-performance AI solutions.</p>
+                <p>A professional, context-aware AI chat platform designed for seamless interaction.</p>
                 
                 <div className="features-grid">
                     <div className="feature-card">
@@ -33,6 +33,17 @@ export function About() {
                     Start Chatting Now <span>→</span>
                 </button>
             </header>
+
+            <section className="about-me-section">
+                <h3>About Me</h3>
+                <p>
+                    Hi, I'm Mor Shoafi. As a Full-Stack Web graduate from John Bryce, 
+                    I am passionate about developing end-to-end solutions that bridge the gap 
+                    between complex backend logic and seamless user experiences. 
+                    This project represents the culmination of my training and my commitment 
+                    to building high-performance, intelligent applications.
+                </p>
+            </section>
 
             <section className="project-vision">
                 <h3>Project Vision</h3>

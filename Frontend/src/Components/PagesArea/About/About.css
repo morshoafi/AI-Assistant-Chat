@@ -55,6 +55,30 @@
 
 .feature-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
 
+/* About Me Section */
+.about-me-section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #edf2f7;
+    text-align: left;
+}
+
+.about-me-section h3 {
+    color: #ff7e5f;
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+}
+
+.about-me-section p {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
 /* Vision Section */
 .project-vision {
     background: #f8fafc;
@@ -101,6 +125,12 @@
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
+}
+
+.chat-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 126, 95, 0.3);
+    background: linear-gradient(135deg, #ff9478, #ffc496);
 }
 
 .about-footer {
